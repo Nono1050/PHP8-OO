@@ -24,14 +24,22 @@ include "Personnage.php";
 <pre><code>$user1 = new Personnage();
 $user2 = new Personnage();
 
+<<<<<<< HEAD
 // ne fonctionne pas, c'est un lien symbolique vers l'objet et nom une attribution de valeur
+=======
+// ne fonctionne pas, c'est un lien symbolique vers l'objet et non une attribution de valeur (Alias)
+>>>>>>> 3abae631c90b115be3f2aebac5e40f96ccfd1edf
 $user3 = $user1;
 
 var_dump($user1,$user2,$user3);</code></pre>
 <?php
 $user1 = new Personnage();
 $user2 = new Personnage();
+<<<<<<< HEAD
 // ne fonctionne pas, c'est un lien symbolique vers l'objet et nom une attribution de valeur
+=======
+// ne fonctionne pas, c'est un lien symbolique vers l'objet et non une attribution de valeur
+>>>>>>> 3abae631c90b115be3f2aebac5e40f96ccfd1edf
 $user3 = $user1;
 var_dump($user1,$user2,$user3);
 
