@@ -12,6 +12,7 @@ class ArticleMapping extends AbstractMapping{
     protected ?string $article_text=null; // minimum 20 caractères, sans tags, sans espace devant et derrière, caractères spéciaux encodés
     protected ?string $article_date=null; // doit être une date valide si remplie sinon erreur
     protected null|bool|int $article_visibility=null; // si int convertir en bool, si bool, attribuer la valeur
+    protected ?array $category=[]; // contiendra les catégories de l'article actuel
 
     // méthodes
 

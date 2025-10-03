@@ -2,8 +2,6 @@
 // création du namespace
 namespace model;
 
-use Exception;
-
 class ArticleMapping extends AbstractMapping{
     // propriétés = champs de la table
     protected ?int $id=null; // entier positif
@@ -14,8 +12,6 @@ class ArticleMapping extends AbstractMapping{
     protected null|bool|int $article_visibility=null; // si int convertir en bool, si bool, attribuer la valeur
 
     // méthodes
-
-
 
     // constructeur et hydratation dans AbstractMapping
 
@@ -120,7 +116,7 @@ class ArticleMapping extends AbstractMapping{
     {
         if(is_null($article_visibility)) return;
             // cause erreur MariaDB
-            $article_visibility = (int) $article_visibility;
+        // $article_visibility = (bool) $article_visibility;
 
             $this->article_visibility = $article_visibility;
     }

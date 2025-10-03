@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 require_once "../config.php";
 
-// Autoload fonctionnel avec les namespaces persos
+// Autoload fonctionnel avec les namespaces "maison"
 // ne fonctionne qu'en OO
 spl_autoload_register(function ($class) {
     $class = str_replace('\\', '/', $class);
@@ -12,6 +12,7 @@ spl_autoload_register(function ($class) {
 });
 
 
+
+
 // chargement du router
 require_once RACINE_PATH."/controller/routerController.php";
-
